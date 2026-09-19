@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Food Menu</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #fff8f0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {color:#e65c00;}
+
+        /* Sibling Selector - styles the paragraph right after the h1 */
+        h1 + p {
+            background:#ffe0b2;
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: #bf360c;
+            display: inline-block;
+        }
+
+        ul {padding: 0; margin-top: 20px;}
+
+        /* Child selector - styles only direct li children of ul */
+        ul > li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #5d4037;
+            padding: 10px 20px;
+            margin: 6px auto;
+            width: 260px;
+            background:#fff3e0;
+            border-radius: 8px;
+        }
+        
+        /* nth-child -  highlights the third item as Chef's special */
+        ul > li:nth-child(3) {
+            background: #ffe082;
+            color: #e65c00;
+        }
+
+        .desc {
+            color: #555;
+            margin-top: 20px;
+            font-size: 15px;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .links {margin-top: 25px;}
+
+        /* Hover Effect - links then glow when mouse moves over them */
+        a {
+            color: #e65c00;
+            text-decoration: none;
+            font-size: 15px;
+          margin: 0 12px;  
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
