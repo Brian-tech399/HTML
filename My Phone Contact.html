@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>My Phone Contact</title>
+    Profile Image
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+     <style >
+        body {
+            background-color:#F0F0F2
+        }
+
+        h1{
+            color:#FF5A43;
+        }
+
+        .card-label{
+            font-size: 11px;
+            color: #999;
+            text-transform: uppercase;
+        }
+
+        pre{
+            font-size: 13px;
+            color: #333;
+        }
+   
+
+     </style>
+    
+</head>
+<body class="py-4">
+    <div class="container">
+        <h1 class="mb-1">My Phone Contact</h1>
+        <p class="text-muted mb-4">Introduction to Objects in JavaScript — Grade</p>
+
+        <!-- Contact Card -->
+         <div class="card shadow-sm md-3" style=" max-width: 400px;">
+            <div class="Card body">
+                <ul class="List-group List-group-flush">
+                 <li class="list-group-item">
+                    <span class="card-label d-block">Name</span>
+                    <strong id="name"></strong>
+                 </li>
+                   
+                <li class="list-group-item">
+                    <span class="card-label d-block">Phone</span>
+                    <strong id="phone"></strong>
+                </li>
+
+                <li class="list-group-item">
+                    <span class="card-label d-block">School</span>
+                    <strong id="school"></strong>
+                </li>
+
+                <li class="list-group-item">
+                    <span class="card-label d-block">City</span>
+                    <strong id="city"></strong>
+                </li>
+                    
+                    
+
+                  
+                </ul>
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        var contact = {
+            name: "Brian Kaliri",
+            phone: "+796516179",
+            school: "Bright Angles High School",
+            city: "Kigali"
+        };
+
+        var namEL = document.getElementById("name");
+        var PhonEL= document.getElementById("phone");
+        namEL.textContent =  contact.name;
+        PhonEL.textContent = contact.phone;
+
+        var schoolEL = document.getElementById("school");
+            var cityEL = document.getElementById("city");
+            schoolEL.textContent = contact["school"]
+             citylEL.textContent = contact["city"]
+
+
+    </script>
+</body>
+</html>
